@@ -850,23 +850,23 @@ snippet tctss
 snippet va
 	validates_associated :${1:attribute}
 snippet va
-	validates :${1:terms}, :acceptance => true
+	validates :${1:terms}, acceptance: true
 snippet vc
-	validates :${1:attribute}, :confirmation => true
+	validates :${1:attribute}, confirmation: true
 snippet ve
-	validates :${1:attribute}, :exclusion => { :in => ${2:%w( mov avi )} }
+	validates :${1:attribute}, exclusion: { in: ${2:%w( mov avi )} }
 snippet vf
-	validates :${1:attribute}, :format => { :with => /${2:regex}/ }
+	validates :${1:attribute}, format: { with: /${2:regex}/ }
 snippet vi
-	validates :${1:attribute}, :inclusion => { :in => %w(${2: mov avi }) }
+	validates :${1:attribute}, inclusion: { in: %w(${2: mov avi }) }
 snippet vl
-	validates :${1:attribute}, :length => { :in => ${2:3}..${3:20} }
+	validates :${1:attribute}, length: { in: ${2:3}..${3:20} }
 snippet vn
-	validates :${1:attribute}, :numericality => true
+	validates :${1:attribute}, numericality: true
 snippet vp
-	validates :${1:attribute}, :presence => true
+	validates :${1:attribute}, presence: true
 snippet vu
-	validates :${1:attribute}, :uniqueness => true
+	validates :${1:attribute}, uniqueness: true
 snippet wants
 	wants.${1:js|xml|html} { ${2} }
 snippet wc
